@@ -1,0 +1,26 @@
+server:
+  port: 8080  # Порт, на котором работает API Gateway
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: order-service
+          uri: lb://ORDER-SERVICE  # Балансировщик нагрузки (Eureka)
+          predicates:
+            - Path=/orders/**  # Все запросы на /orders/** идут в order-service
+
+        - id: inventory-service
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/inventory/**  # Все запросы на /inventory/** идут в inventory-service
+
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**  # Все запросы на /auth/** идут в auth-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
