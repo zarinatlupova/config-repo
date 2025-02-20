@@ -1,109 +1,35 @@
 <mxfile host="app.diagrams.net" modified="2024-01-19T22:22:04.010Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 YaBrowser/23.11.0.0 Safari/537.36" etag="bXABI6MHkd7jztG2bJO0" version="22.1.21" type="google" pages="5">
-  <diagram name="Use Case Diagram" id="lZo8OdItxjby2Sh7k-v9">
+<diagram name="Use Case Diagram" id="lZo8OdItxjby2Sh7k-v9">
     <mxGraphModel dx="1626" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-1" value="Operator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+        <mxCell id="User" value="Пользователь системы" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="275" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-2" value="Камера" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="Camera" value="Видеокамера" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="460" y="190" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-3" value="Штатив" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="460" y="260" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-4" value="Рельса" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="460" y="330" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-5" value="Метки" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="460" y="470" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-6" value="" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="170" y="140" width="240" height="370" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-8" target="CAVvIBmMAzzOK3QMbOJ4-2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-8" value="Увеличить точность" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Recognition" value="Распознавание лиц" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="150" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-10" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="489" y="430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-10" value="Установить параметры меток" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="DataProcessing" value="Обработка видеопотока" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="210" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-13" target="CAVvIBmMAzzOK3QMbOJ4-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-13" target="CAVvIBmMAzzOK3QMbOJ4-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-13" value="Установить шаг смещения" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="DisplayResult" value="Вывод результата" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="270" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-18" target="CAVvIBmMAzzOK3QMbOJ4-19" edge="1">
+        <mxCell id="UserToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="User" target="Recognition" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-20" target="CAVvIBmMAzzOK3QMbOJ4-2" edge="1">
+        <mxCell id="RecogToProcessing" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Recognition" target="DataProcessing" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-20" target="CAVvIBmMAzzOK3QMbOJ4-3" edge="1">
+        <mxCell id="ProcessingToDisplay" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="DataProcessing" target="DisplayResult" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-20" target="CAVvIBmMAzzOK3QMbOJ4-4" edge="1">
+        <mxCell id="CameraToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Camera" target="Recognition" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-18" value="Переместить объект" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="330" width="120" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-19" value="Цель сканирования" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="460" y="400" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-20" value="Переместить установку" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="390" width="120" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-23" target="CAVvIBmMAzzOK3QMbOJ4-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-23" target="CAVvIBmMAzzOK3QMbOJ4-2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bLxMUpifCgi-Ty618M8g-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-23" target="bLxMUpifCgi-Ty618M8g-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-23" value="Установить правило точек" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="450" width="120" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-20" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CAVvIBmMAzzOK3QMbOJ4-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-1" target="CAVvIBmMAzzOK3QMbOJ4-23" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bLxMUpifCgi-Ty618M8g-1" value="Генератор собственных меток" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="460" y="130" width="110" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="bLxMUpifCgi-Ty618M8g-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="CAVvIBmMAzzOK3QMbOJ4-8" target="bLxMUpifCgi-Ty618M8g-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="360" y="185" as="sourcePoint" />
-            <mxPoint x="470" y="185" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
