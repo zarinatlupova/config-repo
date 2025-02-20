@@ -1,1 +1,61 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram id="matrix_mult" name="Matrix Multiplication">
+    <mxGraphModel dx="1086" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- FSM -->
+        <mxCell id="2" value="FSM" style="shape=rectangle;fillColor=#FFDDC1;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Register i,j,k -->
+        <mxCell id="3" value="Register (i,j,k)" style="shape=rectangle;fillColor=#FFC1C1;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Memory Controller -->
+        <mxCell id="4" value="Memory Controller" style="shape=rectangle;fillColor=#C1FFC1;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="210" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- RAM A -->
+        <mxCell id="5" value="RAM (A)" style="shape=rectangle;fillColor=#C1E1FF;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="290" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- RAM B -->
+        <mxCell id="6" value="RAM (B)" style="shape=rectangle;fillColor=#C1E1FF;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="290" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Multiplier -->
+        <mxCell id="7" value="Multiplier (*)" style="shape=rectangle;fillColor=#FFFFC1;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="370" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Adder -->
+        <mxCell id="8" value="Adder (+)" style="shape=rectangle;fillColor=#FFD5C1;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="450" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Memory C -->
+        <mxCell id="9" value="Memory (C)" style="shape=rectangle;fillColor=#D5C1FF;strokeColor=#000000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="530" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections -->
+        <mxCell id="10" edge="1" parent="1" source="2" target="3" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="11" edge="1" parent="1" source="3" target="4" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="12" edge="1" parent="1" source="4" target="5" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="13" edge="1" parent="1" source="4" target="6" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="14" edge="1" parent="1" source="5" target="7" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="15" edge="1" parent="1" source="6" target="7" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="16" edge="1" parent="1" source="7" target="8" style="edgeStyle=elbowEdgeStyle;" />
+        <mxCell id="17" edge="1" parent="1" source="8" target="9" style="edgeStyle=elbowEdgeStyle;" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
