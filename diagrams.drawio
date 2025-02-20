@@ -7,6 +7,9 @@
         <mxCell id="User" value="Пользователь системы" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="275" width="30" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Admin" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="375" width="30" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="Camera" value="Видеокамера" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="460" y="190" width="110" height="50" as="geometry" />
         </mxCell>
@@ -16,10 +19,19 @@
         <mxCell id="DataProcessing" value="Обработка видеопотока" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="210" width="120" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="Storage" value="Хранилище данных" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="270" width="120" height="50" as="geometry" />
+        </mxCell>
         <mxCell id="DisplayResult" value="Вывод результата" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="270" width="120" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="Logs" value="Журнал событий" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="350" width="120" height="50" as="geometry" />
+        </mxCell>
         <mxCell id="UserToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="User" target="Recognition" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AdminToLogs" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Admin" target="Logs" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RecogToProcessing" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Recognition" target="DataProcessing" edge="1">
@@ -28,7 +40,13 @@
         <mxCell id="ProcessingToDisplay" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="DataProcessing" target="DisplayResult" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="ProcessingToStorage" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="DataProcessing" target="Storage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="CameraToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Camera" target="Recognition" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="StorageToLogs" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Storage" target="Logs" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
