@@ -13,6 +13,27 @@
         <mxCell id="Camera" value="Видеокамера" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="460" y="190" width="110" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="AXI_UART" value="AXI UART" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="470" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AXI_GPIO" value="AXI GPIO" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="530" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AXI_VDMA" value="AXI VDMA" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="590" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AXI_S2MM" value="AXI S2MM" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="650" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AXI_MM2S" value="AXI MM2S" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="710" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AXI_Accelerator" value="AXI Accelerator" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="770" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PowerSubsystem" value="Power Subsystem" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="460" y="830" width="110" height="50" as="geometry" />
+        </mxCell>
         <mxCell id="Recognition" value="Распознавание лиц" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="150" width="120" height="50" as="geometry" />
         </mxCell>
@@ -27,27 +48,6 @@
         </mxCell>
         <mxCell id="Logs" value="Журнал событий" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="460" y="350" width="120" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="UserToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="User" target="Recognition" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="AdminToLogs" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Admin" target="Logs" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="RecogToProcessing" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Recognition" target="DataProcessing" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ProcessingToDisplay" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="DataProcessing" target="DisplayResult" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ProcessingToStorage" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="DataProcessing" target="Storage" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="CameraToRecog" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Camera" target="Recognition" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="StorageToLogs" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="Storage" target="Logs" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
